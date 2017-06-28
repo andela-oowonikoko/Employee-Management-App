@@ -12,7 +12,8 @@ load_dotenv(dotenv_path)
 
 config_name = os.getenv('FLASK_CONFIG')
 print(config_name)
-app = create_app(config_name)
+# app = create_app(config_name)
+app = create_app('production')
 
 if __name__ == '__main__':
     app.run()
